@@ -3,6 +3,7 @@ import { easing } from "maath";
 import { useSnapshot } from "valtio";
 import { useFrame } from "@react-three/fiber";
 import { Decal, useGLTF, useTexture } from "@react-three/drei";
+
 import state from "../store";
 
 const Shirt = () => {
@@ -35,6 +36,7 @@ const Shirt = () => {
             map={fullTexture}
           />
         )}
+
         {snap.isLogoTexture && (
           <Decal
             position={[0, 0.04, 0.15]}
